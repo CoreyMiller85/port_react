@@ -1,0 +1,15 @@
+.project {
+  margin: .5rem;
+  background: white;
+  color: black;
+  display: flex;
+  border-radius: 5px;
+  &__image {
+    flex: 1;
+
+  }
+
+  &__content {
+    flex: 3;
+  }
+}

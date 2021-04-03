@@ -1,0 +1,29 @@
+.header {
+  background: black;
+  height: 10vh;
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__logo {
+
+    & a:link,
+    & a:visited {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-item {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  &__list-link:visited,
+  &__list-link:link {
+    color: white;
+    text-decoration: none;
+  }
+}

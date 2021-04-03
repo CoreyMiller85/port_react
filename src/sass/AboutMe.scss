@@ -1,0 +1,34 @@
+.about {
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  &__card{
+    border-radius: 5px;
+    background: white;
+    display: flex;
+    margin: .5rem;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &__content {
+    height: 100%;
+    flex: 3;    
+
+    &__title {
+
+    }
+
+  }
+
+  &__image {
+    height: 100%;
+    flex: 2;
+  }
+
+
+}
