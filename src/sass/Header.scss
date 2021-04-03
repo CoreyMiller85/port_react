@@ -14,7 +14,8 @@
     }
   }
   &__list {
-    display: flex;
+    
+    display: none;
     justify-content: space-between;
   }
   &__list-item {
