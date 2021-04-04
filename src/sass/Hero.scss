@@ -1,8 +1,5 @@
 .hero {
-  background-color: $background-black;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient( $color-dark-green, $color-medium-green,);
   color: $main-text-color;
   height: 100vh;
   display: flex;
@@ -38,8 +35,9 @@
  &__title {
    font-family: 'Permanent Marker', cursive;
    color: $main-text-color;
-   font-size: 40px;
-   letter-spacing: 2px;
+   font-size: 6rem;
+   text-shadow: 0px 2px 10px black;
+   letter-spacing: 4px;
     &-sub {
       color: $sub-title-font;
     }
@@ -57,11 +55,11 @@
  
 
 .btn {
-  background: #66c82f;
-  padding: .5rem 1rem;
+  background:$color-light-green;
+  padding: 1rem 1.5rem;
   border-radius: 50px;
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: $main-text-color;
 }
 }

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Project from './Project'
-import "../sass/Projects.scss"
 
 const Projects = () => {
   const [projects, setProjects] = useState([

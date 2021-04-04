@@ -7,9 +7,8 @@ const Header = () => {
         <h2><a href="#"> Portfolio </a></h2>
       </div>
       <div className="header__menu-btn">
-      +
       </div>
-      <div>
+      <div className="header__list__container">
         <ul className="header__list">
           <li className="header__list-item"><a className="header__list-link" href="#">Item 1</a></li>
           <li className="header__list-item"><a className="header__list-link" href="#">Item 2</a></li>
