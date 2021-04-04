@@ -1,14 +1,30 @@
 .project {
-  background: $color-medium-green;
+  background: linear-gradient(to top, rgba($color: $color-dark-green, $alpha: .2) ,  rgba($color: $color-light-green, $alpha: .2) );
   color: $main-text-color;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
 
-  &__image {
+  
+
+  &:nth-child(even) {
+    background: linear-gradient(to bottom, rgba($color: $color-dark-green, $alpha: .2) ,  rgba($color: $color-light-green, $alpha: .2) );
+
+  }
+
+  &__image img {
     flex: 1;
-
+    height: auto;
+    width: 100%
   }
 
   &__content {
     flex: 3;
+    margin-top: -1rem;
+    background: $color-light-green;
+    padding: 0 1rem;
+
   }
+  
 }
