@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overscroll-behavior: none;
+
 }
 
 body {
-}
+  background: $background-black;
+  font-family: 'Roboto', sans-serif;}

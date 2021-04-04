@@ -1,9 +1,8 @@
 .project {
-  margin: .5rem;
-  background: white;
-  color: black;
+  background: $background-black;
+  color: $main-text-color;
   display: flex;
-  border-radius: 5px;
+
   &__image {
     flex: 1;
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import "../sass/HireMe.scss";
 
 const HireMe = () => {
   return (

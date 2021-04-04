@@ -1,18 +1,67 @@
 .hero {
-  background: #333;
-  color: white;
-  height: 90vh;
+  background-color: $background-black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $main-text-color;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position:relative;
+
+  &::before {
+    
+      content: "";
+      position: absolute;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+
+    
+  }
+
  &__particles {
    height: 100%;
    width: 100%;
  }
 
+ 
+
  &__contents {
    position: absolute;
+   padding: 1rem;
+
+
  }
+
+ &__title {
+   font-family: 'Permanent Marker', cursive;
+   color: $main-text-color;
+   font-size: 40px;
+   letter-spacing: 2px;
+    &-sub {
+      color: $sub-title-font;
+    }
+  }
+&__sub {
+  color: $sub-title-font;
+}
+
+&__button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+ 
+
+.btn {
+  background: #66c82f;
+  padding: .5rem 1rem;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
 }

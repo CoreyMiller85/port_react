@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/Hero.scss";
 import Particles from "react-particles-js";
 
 const Hero = () => {
@@ -10,7 +9,7 @@ const Hero = () => {
         params={{
           particles: {
             number: {
-              value: 200,
+              value: 100,
               density: {
                 enable: true,
                 value_area: 1000,
@@ -20,13 +19,13 @@ const Hero = () => {
               value: "#39FF14",
             },
             opacity: {
-              value: 0.5,
+              value: 1,
               anim: {
                 enable: true,
               },
             },
             size: {
-              value: 12,
+              value: 4,
               random: true,
               anim: {
                 enable: true,
@@ -34,18 +33,24 @@ const Hero = () => {
               },
             },
             line_linked: {
-              enable: false
+              enable: true,
+              distance: 150,
+              opacity: 0.4,
+              color: "#39FF14",
+            },
           },
-          },
+         
         }}
       />
       <div className="hero__contents">
         <h1 className="hero__title">Corey Miller</h1>
         <h3 className="hero__title-sub">Web Developer</h3>
         <p className="hero__sub">React, Wordpress, Javascript, Php</p>
-        <a className="btn" href="#">
-          See My Work
-        </a>
+        <div className="hero__button-div">
+          <a className="btn" href="#">
+            See My Work
+          </a>
+        </div>
       </div>
     </div>
   );

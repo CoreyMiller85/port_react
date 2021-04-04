@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './component/App'
-import "./sass/index.scss"
+import './sass/_main.scss'
+
 
 ReactDOM.render(<App />, document.getElementById('root'))

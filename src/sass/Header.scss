@@ -1,15 +1,20 @@
 .header {
-  background: black;
+  background: transparent;
+  width: 100%;
   height: 10vh;
-  color:white;
+  color:$main-text-color;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  z-index: 10;
+
+
   &__logo {
 
     & a:link,
     & a:visited {
-      color: white;
+      color: $main-text-color;
       text-decoration: none;
     }
   }
@@ -24,7 +29,7 @@
   }
   &__list-link:visited,
   &__list-link:link {
-    color: white;
+    color: $main-text-color;
     text-decoration: none;
   }
 }
