@@ -1,20 +1,49 @@
 .skills {
   padding: 1rem;
-  background: $color-medium-green;
   color: $main-text-color;
+  background: $color-medium-green;
+  background-image: linear-gradient(
+    to top,
+    rgba($color: $color-medium-green, $alpha: 0.2),
+    rgba($color: $color-light-green, $alpha: 0.2)
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logos {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  &__logos img {
+    height: 75px;
+    width: auto;
+  }
+
   &__title {
-    
-    margin: .5rem;
+    font-family: $title-font;
+    color: $color-bright-green;
+    font-size: $title-font-size;
+    text-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.4);
+
+    margin: 0.5rem;
   }
   &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     margin-left: 1rem;
-    list-style: none;
     align-self: flex-start;
     &__item {
-
     }
   }
 }

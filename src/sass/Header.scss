@@ -1,12 +1,13 @@
 .header {
-  background: transparent;
+  background: black;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 10vh;
   color: $main-text-color;
   width: 100%;
-  position: fixed;
+  top: 0;
+  position: sticky;
   z-index: 1;
   &__logo {
     margin-right: auto;
@@ -27,6 +28,7 @@
     width: 2rem;
     background: white;
     position: relative;
+    cursor: pointer;
     &::before {
       position: absolute;
       top: 10px;
@@ -47,14 +49,35 @@
       border-radius: 5px;
       background-color: white;
     }
+
+    
+  }
+
+  &__list__container {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+
+    &.active {
+      display: block;
+      background: black;
+      width: 100%;
+      height: 100vh;
+    }
   }
 
   &__list {
-    display: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
   &__list-item {
-    display: inline-block;
-    margin-right: 2rem;
+    display: block;
+    text-transform: uppercase;
+
   }
   &__list-link:visited,
   &__list-link:link {
@@ -62,3 +85,8 @@
     text-decoration: none;
   }
 }
+
+.header__menu-btn.active .header__list__container{
+display: block;
+}
+
