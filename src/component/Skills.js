@@ -11,7 +11,7 @@ import wordPressIcon from "../img/wordpress-icon.svg";
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <div className="skills" id='skills'>
       <div className="skills__container">
         <h2 className="skills__title">Skills</h2>
         <div className="skills__logos">

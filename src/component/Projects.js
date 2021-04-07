@@ -5,19 +5,19 @@ const Projects = () => {
   const [projects, setProjects] = useState([
     {
       title: "test title 1",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis repellendus dolore voluptatem neque ipsa consequatur voluptatibus quia expedita asperiores possimus itaque harum, deleniti dolores tempore inventore tempora! Nihil assumenda similique facilis commodi qui voluptatem porro veniam dolores repudiandae temporibus nam vitae accusantium aut debitis, expedita rem quaerat laudantium quisquam. Nemo?"
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eveniet eos animi accusantium aperiam libero dignissimos consequatur facere repellat praesentium?"
     },
     {
       title: "test title 2",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis repellendus dolore voluptatem neque ipsa consequatur voluptatibus quia expedita asperiores possimus itaque harum, deleniti dolores tempore inventore tempora! Nihil assumenda similique facilis commodi qui voluptatem porro veniam dolores repudiandae temporibus nam vitae accusantium aut debitis, expedita rem quaerat laudantium quisquam. Nemo?"
+      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nisi vel autem dolorum vitae blanditiis tempore quo ea modi quis."
     },
     {
       title: "test title 3",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis repellendus dolore voluptatem neque ipsa consequatur voluptatibus quia expedita asperiores possimus itaque harum, deleniti dolores tempore inventore tempora! Nihil assumenda similique facilis commodi qui voluptatem porro veniam dolores repudiandae temporibus nam vitae accusantium aut debitis, expedita rem quaerat laudantium quisquam. Nemo?"
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eveniet eos animi accusantium aperiam libero dignissimos consequatur facere repellat praesentium?"
     },
     {
       title: "test title 4",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis repellendus dolore voluptatem neque ipsa consequatur voluptatibus quia expedita asperiores possimus itaque harum, deleniti dolores tempore inventore tempora! Nihil assumenda similique facilis commodi qui voluptatem porro veniam dolores repudiandae temporibus nam vitae accusantium aut debitis, expedita rem quaerat laudantium quisquam. Nemo?"
+      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nisi vel autem dolorum vitae blanditiis tempore quo ea modi quis."
     },
   ]);
   const proList = projects.map((p) => {

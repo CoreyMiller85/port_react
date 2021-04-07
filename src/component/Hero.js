@@ -1,9 +1,11 @@
 import React from "react";
 import Particles from "react-particles-js";
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <Particles
         className="hero__particles"
         params={{
@@ -47,9 +49,9 @@ const Hero = () => {
         <h3 className="hero__title-sub">Web Developer</h3>
         <p className="hero__sub">React, Wordpress, Javascript, Php</p>
         <div className="hero__button-div">
-          <a className="btn" href="#">
+          <Link Link activeClass="active" to="project" spy={true} smooth={true} duration={1000} offset={-40} className="header__list-link" className="btn" >
             See My Work
-          </a>
+          </Link>
         </div>
       </div>
     </div>

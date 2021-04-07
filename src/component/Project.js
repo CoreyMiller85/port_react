@@ -3,10 +3,9 @@ import PlaceHolderImg from "../img/PlaceHolderImg.jpeg";
 
 const Project = (props) => {
   return (
-    <div className="project">
+    <div className="project" id='project'>
       <div className="project__container">
-        <div className="project__image">
-          <img src={PlaceHolderImg} alt="" />
+        <div className="project__image" style={{backgroundImage: `url(${PlaceHolderImg})`}}>
         </div>
         <div className="project__content">
           <h3 className="project__title">{props.title}</h3>

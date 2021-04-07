@@ -9,13 +9,20 @@
   top: 0;
   position: sticky;
   z-index: 1;
+
+
   &__logo {
     margin-right: auto;
     margin-left: 1rem;
     justify-self: flex-start;
+    font-size: 32px;
+    font-family: $title-font;
+    color: $color-bright-green;
+    cursor: pointer;
+
     & a:link,
     & a:visited {
-      color: $main-text-color;
+      color: $color-bright-green;
       text-decoration: none;
     }
   }
@@ -76,11 +83,11 @@
   }
   &__list-item {
     display: block;
+    cursor: pointer;
     text-transform: uppercase;
 
   }
-  &__list-link:visited,
-  &__list-link:link {
+  &__list-link {
     color: $main-text-color;
     text-decoration: none;
   }

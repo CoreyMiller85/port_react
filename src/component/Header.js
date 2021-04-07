@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -6,7 +8,7 @@ const Header = () => {
     <div className="header">
       <div className="header__logo">
         <h2>
-          <a href="#"> Portfolio </a>
+          <Link Link activeClass="active" to="hero" spy={true} smooth={true} duration={1000} offset={-100} > CM </Link>
         </h2>
       </div>
       <div>
@@ -14,30 +16,30 @@ const Header = () => {
           className={active ? "header__menu-btn active" : "header__menu-btn"}
           onClick={() => setActive(!active)}
         ></div>
-        <div className={active ? "header__list__container active" : "header__list__container"}>
-          <ul className="header__list">
+        <div className={active ? "header__list__container active" : "header__list__container"} onClick={() => setActive(!active)}>
+          <ul className="header__list" >
             <li className="header__list-item">
-              <a className="header__list-link" href="#">
-                Item 1
+              <Link activeClass="active" to="about" spy={true} smooth={true} duration={1000} offset={-95} className="header__list-link" onClick={() => setActive(!active)}>
+                About Me  
+              </Link>
+            </li>
+            <li className="header__list-item">
+              <Link Link activeClass="active" to="project" spy={true} smooth={true} duration={1000} offset={-95} className="header__list-link" onClick={() => setActive(!active)} >
+                Projects
+              </Link>
+            </li>
+            <li className="header__list-item">
+              <Link Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} offset={-40} className="header__list-link" onClick={() => setActive(!active)}>
+                Skills
+              </Link>
+            </li>
+            <li className="header__list-item" >
+              <a className="header__list-link" href="#" onClick={() => setActive(!active)}>
+                Contact
               </a>
             </li>
             <li className="header__list-item">
-              <a className="header__list-link" href="#">
-                Item 2
-              </a>
-            </li>
-            <li className="header__list-item">
-              <a className="header__list-link" href="#">
-                Item 3
-              </a>
-            </li>
-            <li className="header__list-item">
-              <a className="header__list-link" href="#">
-                Item 4
-              </a>
-            </li>
-            <li className="header__list-item">
-              <a className="header__list-link" href="#">
+              <a className="header__list-link" href="#" onClick={() => setActive(!active)}>
                 Item 5
               </a>
             </li>
