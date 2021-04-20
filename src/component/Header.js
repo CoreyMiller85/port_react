@@ -1,11 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 const Header = () => {
+
   const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const header = document.getElementById('header');
+    const sticky = header.offsetTop;
+    const scrollCallBack = window.addEventListener("scroll", () => {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        
+      } else {
+        header.classList.remove("sticky");
+        
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll", scrollCallBack);
+    };
+  }, []);
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="header__logo">
         <h2>
           <Link Link activeClass="active" to="hero" spy={true} smooth={true} duration={1000} offset={-100} > CM </Link>
