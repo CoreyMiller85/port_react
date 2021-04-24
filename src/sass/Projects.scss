@@ -1,8 +1,15 @@
 .projects {
-  background: $color-medium-green;
+  background: $color-dark-blue;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  &__title {
+    align-self: flex-start;
+    margin: 1rem 1rem 0 1rem;
+    font-family: $title-font;
+    font-size: 32px;
+    color: $color-bright-green;
+  }
 }

@@ -12,16 +12,15 @@ const Header = () => {
     const scrollCallBack = window.addEventListener("scroll", () => {
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
-        
       } else {
         header.classList.remove("sticky");
-        
       }
     });
     return () => {
       window.removeEventListener("scroll", scrollCallBack);
     };
   }, []);
+
   return (
     <div className="header" id="header">
       <div className="header__logo">
@@ -42,7 +41,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="header__list-item">
-              <Link Link activeClass="active" to="project" spy={true} smooth={true} duration={1000} offset={-95} className="header__list-link" onClick={() => setActive(!active)} >
+              <Link Link activeClass="active" to="project" spy={true} smooth={true} duration={1000} offset={-120} className="header__list-link" onClick={() => setActive(!active)} >
                 Projects
               </Link>
             </li>
