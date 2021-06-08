@@ -1,37 +1,38 @@
 .skills {
-  padding: 1rem;
+  padding: .5rem;
   color: $main-text-color;
-  background: $color-medium-green;
-  background-image: linear-gradient(
-    to top,
-    rgba($color: $color-medium-green, $alpha: 0.2),
-    rgba($color: $color-light-green, $alpha: 0.2)
-  );
+  background: rgb(246, 255, 236);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: black;
 
   &__container {
     width: 100%;
     height: 100%;
+    background: rgb(246, 255, 236);
+    border-radius: 7px;
+
   }
 
   &__logos {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     margin: 1rem 0;
   }
 
   &__logos img {
     height: 75px;
+    margin: .5rem;
     width: auto;
   }
 
   &__title {
     font-family: $title-font;
-    color: $color-bright-green;
+    color: $color-dark-blue;
     font-size: $title-font-size;
     text-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.4);
 

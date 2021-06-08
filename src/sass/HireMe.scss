@@ -1,4 +1,21 @@
-.hire {
+.contact {
   background: $color-medium-green;
   color: $main-text-color;
+
+  &__content {
+    display: flex;
+  }
+
+  &__col-1 {
+    flex: 1
+  }
+
+  &__col-2 {
+    flex: 1
+  }
+
+  &__form-item input {
+  
+  }
 }
+
