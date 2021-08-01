@@ -35,8 +35,18 @@ const AboutMe = () => {
 						<div className="about__content__awards-title">
 							<p>Team TreeHouse TechDegree Alumni</p>
 						</div>
-						<img src={treehouse} alt="Team treehouse logo" />
-						<img src={techDegree} alt="Treehouse techdegree logo" />
+						<div className="about__content__awards-logos">
+							<img
+								className="treehouse-logo"
+								src={treehouse}
+								alt="Team treehouse logo"
+							/>
+							<img
+								className="techdegree-logo"
+								src={techDegree}
+								alt="Treehouse techdegree logo"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
